@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cohere Demo</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,600;1,9..40,600&display=swap" rel="stylesheet">
+</head>
+<body>
+   
+    <div class="content">
+        <div class="logo">
+            <img src="logo.svg" alt="Logo">
+        </div>
+        <form>
+            <div class="row1">
+                <div class="rating_packaging">
+                    <text>Packaging</text>
+                    <input type="radio" name="rating_packaging" id="rating1" value="5">
+                    <label for="rating1" class="fa fa-star"></label>
+                        
+                    <input type="radio" name="rating_packaging" id="rating2" value="4">
+                    <label for="rating2" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_packaging" id="rating3" value="3">
+                    <label for="rating3" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_packaging" id="rating4" value="2"> 
+                    <label for="rating4" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_packaging" id="rating5" value="1">
+                    <label for="rating5" class="fa fa-star"></label>
+                    
+                </div>
+                <div class="rating_price">
+                    <text>Price</text>
+                    <input type="radio" name="rating_price" id="rating_price1" value="5">
+                    <label for="rating_price1" class="fa fa-star"></label>
+                        
+                    <input type="radio" name="rating_price" id="rating_price2" value="4">
+                    <label for="rating_price2" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_price" id="rating_price3" value="3">
+                    <label for="rating_price3" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_price" id="rating_price4" value="2">
+                    <label for="rating_price4" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_price" id="rating_price5" value="1">
+                    <label for="rating_price5" class="fa fa-star"></label>
+                </div>
+                <div class="rating_quality">
+                    <text>Quality</text>
+                    <input type="radio" name="rating_quality" id="rating_quality1" value="5">
+                    <label for="rating_quality1" class="fa fa-star"></label>
+                        
+                    <input type="radio" name="rating_quality" id="rating_quality2" value="4">
+                    <label for="rating_quality2" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_quality" id="rating_quality3" value="3">
+                    <label for="rating_quality3" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_quality" id="rating_quality4" value="2">
+                    <label for="rating_quality4" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_quality" id="rating_quality5" value="1">
+                    <label for="rating_quality5" class="fa fa-star"></label>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="rating_service">
+                    <text>Service</text>
+                    <input type="radio" name="rating_service" id="rating_service1" value="5">
+                    <label for="rating_service1" class="fa fa-star"></label>
+                        
+                    <input type="radio" name="rating_service" id="rating_service2" value="4">
+                    <label for="rating_service2" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_service" id="rating_service3" value="3">
+                    <label for="rating_service3" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_service" id="rating_service4" value="2">
+                    <label for="rating_service4" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_service" id="rating_service5" value="1">
+                    <label for="rating_service5" class="fa fa-star"></label>
+                    
+                </div>
+                <div class="rating_shipping">
+                    <text>Shipping</text>
+                    <input type="radio" name="rating_shipping" id="rating_shipping1" value="5">
+                    <label for="rating_shipping1" class="fa fa-star"></label>
+                        
+                    <input type="radio" name="rating_shipping" id="rating_shipping2" value="4">
+                    <label for="rating_shipping2" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_shipping" id="rating_shipping3" value="3">
+                    <label for="rating_shipping3" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_shipping" id="rating_shipping4" value="2">
+                    <label for="rating_shipping4" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_shipping" id="rating_shipping5" value="1">
+                    <label for="rating_shipping5" class="fa fa-star"></label>
+                </div>
+                <div class="rating_taste">
+                    <text>Taste</text>
+                    <input type="radio" name="rating_taste" id="rating_taste1" value="5">
+                    <label for="rating_taste1" class="fa fa-star"></label>
+                        
+                    <input type="radio" name="rating_taste" id="rating_taste2" value="4">
+                    <label for="rating_taste2" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_taste" id="rating_taste3" value="3">
+                    <label for="rating_taste3" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_taste" id="rating_taste4" value="2">
+                    <label for="rating_taste4" class="fa fa-star"></label>
+                       
+                    <input type="radio" name="rating_taste" id="rating_taste5" value="1">
+                    <label for="rating_taste5" class="fa fa-star"></label>
+                </div>
+            </div>
+           
+            <div class="input-container">
+                <div class="amount">
+                    <input class="amount-input" type ="number" placeholder="Enter number of products">
+                </div>
+                <div class="search">
+                    <input class="search-input" type ="search" placeholder="Enter query">
+                </div>
+                <div class="dropdown-container">
+                    <div class="dropdown">
+                        <div class="select">
+                            <span class="selected">Snacks</span>
+                            <div class="caret"></div>
+                        </div>
+                        <ul class ="menu">
+                            <li class ="active">Snacks</li>
+                            <li>Condiment & Spices</li>
+                            <li>Coffee, Tea & Cocoa</li>
+                            <li>Food & Beverage</li>
+                            <li>Non-Alcoholic Beverage</li>
+                            <li>OTC</li>
+                            <li>Frozen</li>
+                            <li>Personal Care</li>
+                            <li>Powder & Mixes</li>
+                            <li>Pets</li>
+                            <li>Canned Goods</li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="hidden" name="selectedCategory" id="selectedCategory">
+            </div>
+            <div class="button">
+                <button type="submit" onclick="submitForm()">Submit</button>
+            </div>
+            
+        </form>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>Source Products From Vendors You Can Trust</p>
+        </div>
+        <div class="APIOut">
+            <div id="output"></div> 
+        </div>
+    </footer>
+    <script>
+        const dropdowns = document.querySelectorAll('.dropdown');
+
+        dropdowns.forEach(dropdown => {
+            const select = dropdown.querySelector('.select');
+            const caret = dropdown.querySelector('.caret');
+            const menu = dropdown.querySelector('.menu');
+            const options = dropdown.querySelectorAll('.menu li');
+            const selected = dropdown.querySelector('.selected');
+
+            select.addEventListener('click', () => {
+                select.classList.toggle('select-clicked');
+                caret.classList.toggle('caret-rotate');
+                menu.classList.toggle('menu-open');
+            });
+
+            options.forEach(option => {
+                option.addEventListener('click', () =>{
+                    selected.innerText = option.innerText;
+                    select.classList.remove('select-clicked');
+                    caret.classList.remove('caret-rotate');
+                    menu.classList.remove('menu-open');
+                    options.forEach(option =>{
+                        option.classList.remove('active');
+                    });
+                    option.classList.add('active');
+                });
+            });
+        });
+    </script>
+    <script>
+        function getPackagingRating() {
+            const radios = document.getElementsByName('rating_packaging');
+            for (const radio of radios) {
+                if (radio.checked) {
+                    return radio.value; 
+                }
+            }
+            return null;
+        }
+        function getPriceRating() {
+            const radios = document.getElementsByName('rating_price');
+            for (const radio of radios) {
+                if (radio.checked) {
+                    return radio.value; 
+                }
+            }
+            return null;
+        }
+        function getQualityRating() {
+            const radios = document.getElementsByName('rating_quality');
+            for (const radio of radios) {
+                if (radio.checked) {
+                    return radio.value; 
+                }
+            }
+            return null;
+        }
+        function getServiceRating() {
+            const radios = document.getElementsByName('rating_service');
+            for (const radio of radios) {
+                if (radio.checked) {
+                    return radio.value; 
+                }
+            }
+            return null;
+        }
+        function getShippingRating() {
+            const radios = document.getElementsByName('rating_shipping');
+            for (const radio of radios) {
+                if (radio.checked) {
+                    return radio.value; 
+                }
+            }
+            return null;
+        }
+        function getTasteRating() {
+            const radios = document.getElementsByName('rating_taste');
+            for (const radio of radios) {
+                if (radio.checked) {
+                    return radio.value; 
+                }
+            }
+            return null;
+        }
+        function displayData(data) {
+            const outputElement = document.getElementById("output");
+            outputElement.innerHTML = ""; 
+            if (Array.isArray(data)) {
+                const container = document.createElement("div");
+                data.forEach((value) => {
+                    const item = document.createElement("div");
+                    item.style.marginBottom = "5px"; 
+                    if (typeof value === "object" && value !== null) {
+                        const nestedElement = document.createElement("div");
+                        nestedElement.style.marginLeft = "20px";
+                        nestedElement.textContent = JSON.stringify(value, null, 2); // Replace with custom handling if needed
+                        item.appendChild(nestedElement);
+                    } else {
+                        item.textContent = value;
+                    }
+
+                    container.appendChild(item);
+                });
+
+                outputElement.appendChild(container);
+            } 
+            else {
+                outputElement.textContent = data.toString();
+            }
+        }
+        function submitForm(){
+            event.preventDefault();
+            //radios
+            const packagingRating = getPackagingRating();
+            const priceRating = getPriceRating();
+            const qualityRating = getQualityRating();
+            const serviceRating = getServiceRating();
+            const shippingRating = getShippingRating();
+            const tasteRating = getTasteRating();
+
+            console.log('Packaging Rating:', packagingRating);
+            console.log('Price Rating:', priceRating);
+            console.log('Quality Rating:', qualityRating);
+            console.log('Service Rating:', serviceRating);
+            console.log('Shipping Rating:', shippingRating);
+            console.log('Taste Rating:', tasteRating);
+
+            //menu
+            const activeItem = document.querySelector('.menu .active');
+            const selectedValue = activeItem ? activeItem.textContent : '';
+            document.getElementById('selectedCategory').value = selectedValue;
+            console.log('Selected category:', selectedValue);
+
+            //text bars
+            const amount = document.querySelector('.amount-input').value;
+            const searchQuery = document.querySelector('.search-input').value;
+            console.log('Amount:', amount);
+            console.log('Search query:', searchQuery);
+            
+            const requestData = {
+                "NumberOfReccomendations": parseInt(amount, 10),
+                "UserQuery": searchQuery,
+                "Category": selectedValue,
+                "RatingPackaging": parseInt(packagingRating, 10),
+                "RatingPrice": parseInt(priceRating, 10),
+                "RatingQuality": parseInt(qualityRating, 10),
+                "RatingService": parseInt(serviceRating, 10),
+                "RatingShipping": parseInt(shippingRating, 10),
+                "RatingTaste": parseInt(tasteRating, 10)
+            };
+
+
+            fetch("http://127.0.0.1:8000/svdrecommend", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(requestData)
+            })
+            .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+                return response.json(); 
+            })
+            .then(data => {
+                console.log(data); 
+                displayData(data); 
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+        
+
+    </script>
+</body>
+</html>

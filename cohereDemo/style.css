@@ -1,0 +1,303 @@
+html, body {
+    height: 100%;   
+    margin: 0;      
+}
+
+body {
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;  
+    font-family: "Lexend", sans-serif;
+}
+
+.row1,
+.row2 {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+.row1 text,
+.row2 text{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.rating_packaging,
+.rating_price,
+.rating_quality,
+.rating_service,
+.rating_shipping,
+.rating_taste{
+    padding: 20px;
+}
+
+.rating_packaging input,
+.rating_price input,
+.rating_quality input,
+.rating_service input,
+.rating_shipping input,
+.rating_taste input{
+    display: none;
+}
+
+.rating_packaging input + label,
+.rating_price input + label,
+.rating_quality input + label,
+.rating_service input + label,
+.rating_shipping input + label,
+.rating_taste input + label{
+    font-size: 25px;
+    cursor: pointer;
+    color: #838383;
+}
+
+.rating_packaging input:checked ~ label,
+.rating_price input:checked ~ label,
+.rating_quality input:checked ~ label,
+.rating_service input:checked ~ label,
+.rating_shipping input:checked ~ label,
+.rating_taste input:checked ~ label{
+    color: #ff7c06;  
+}
+
+.rating_packaging label:hover,
+.rating_packaging label:hover ~ label,
+.rating_price label:hover,
+.rating_price label:hover ~ label,
+.rating_quality label:hover,
+.rating_quality label:hover ~ label,
+.rating_service label:hover,
+.rating_service label:hover ~ label,
+.rating_shipping label:hover,
+.rating_shipping label:hover ~ label,
+.rating_taste label:hover,
+.rating_taste label:hover ~ label   {
+    color: #ff7c06;  
+}
+/* FFD700*/
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    flex-grow: 1;  
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    background: #f6f6f6; 
+    width: 450px;
+    transition: background 0.25s;
+}
+
+.search:focus-within {
+    background: #f1f1f1;
+}
+
+.search-input {
+    font-size: 16px;
+    font-family: "Lexend", sans-serif;
+    color: #333333;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1;
+}
+
+.search-input::placeholder {
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.amount {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    background: #f6f6f6; 
+    width: 200px;
+    transition: background 0.25s;
+}
+
+.amount:focus-within {
+    background: #f1f1f1;
+}
+
+.amount-input {
+    font-size: 16px;
+    font-family: "Lexend", sans-serif;
+    color: #333333;
+    outline: none;
+    border: none;
+    background: transparent;
+    flex: 1;
+}
+
+.dropdown{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 15px;
+    font-style: normal;
+    min-width: 225px;
+    position: relative;
+    width: 25%;
+}
+
+.dropdown *{
+    box-sizing: border-box;
+}
+
+.select{
+    background: #2a2f3b;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px #2a2f3b solid;
+    border-radius: 28px;
+    padding: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.select-clicked{
+    border: 2px #26489a solid;
+    box-shadow: 0 0 0.8em #26489a;
+}
+
+.select:hover {
+    background: #323741;
+}
+
+.caret{
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #fff;
+    transition: 0.3s;
+}
+
+.caret-rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #323741;
+    border: 1px #363a43 solid;
+    box-shadow: 0 0.5em 1em rgba(0,0,0,0.2);
+    border-radius: 0.5em;
+    color: #9fa5b5;
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+}
+
+.menu li{
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+.menu li:hover{
+    background: #2a2d35;
+}
+
+.active{
+    background: #23242a;
+}
+
+.menu-open{
+    display: block;
+    opacity: 1;
+}
+
+.button{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+button, input[type="submit"] {
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    border-radius: 28px;
+    background: #086444; 
+    width: 200px;
+    color: white;
+    transition: background-color 0.3s ease; 
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #065539; 
+}
+.APIOut{
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 17px;
+    font-style: normal;          
+    text-align: center;      
+    padding: 15px;           
+    width: 100%;
+}
+/* Footer styling */
+footer {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 40px;
+    font-style: normal;
+    background-color: #086444;  
+    color: white;           
+    text-align: center;               
+    width: 100%;
+    margin-top: auto;     
+}
