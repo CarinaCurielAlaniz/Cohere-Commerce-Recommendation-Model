@@ -1,4 +1,9 @@
-# CohereCommerce
+# Cohere Commerce Recommendation Model
+
+## Overview
+
+The **Cohere Commerce Machine Learning Recommendation Model** is an innovative addition to Cohere Commerce's’ existing e-commerce platform. This addition designed to streamline the purchasing process while providing a personalized shopping experience for customers. Leveraging cutting-edge AI and machine learning technology, this application delivers targeted, tailored product recommendations. With a focus on scalability and performance, this platform aims to offer an intuitive user interface and a secure environment for customers.
+
 
 Below is the current UI that houses my ML recommendation API: 
 
